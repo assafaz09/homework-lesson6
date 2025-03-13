@@ -113,3 +113,20 @@ console.log(upperCase(["assaF"]))
  const numbers1 = [12, 25, 30, 17, 9, 18, 22, 27]
  const newNumbers = numbers1.filter(num => num %3 ===0);
  console.log(newNumbers);
+
+//  question2:
+let arr = ["A", "D", "a", 'S', "d", "a", "A", "S",]
+let newArr = arr.map((item)=>{
+    if(item===item.toUpperCase() ){
+        return 'U'
+    }
+    return 'O';
+})
+console.log (newArr);
+
+let abc = ['a','b','c','d','e','f']
+
+let abcIndex = abc.map((item, index) =>{
+    return index % 2 === 0 ? index : item
+});
+console.log(abcIndex)
