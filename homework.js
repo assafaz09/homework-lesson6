@@ -114,6 +114,7 @@ console.log(upperCase(["assaF"]))
  const newNumbers = numbers1.filter(num => num %3 ===0);
  console.log(newNumbers);
 
+
 //  question2:
 let arr = ["A", "D", "a", 'S', "d", "a", "A", "S",]
 let newArr = arr.map((item)=>{
@@ -124,9 +125,38 @@ let newArr = arr.map((item)=>{
 })
 console.log (newArr);
 
+
+// question3
 let abc = ['a','b','c','d','e','f']
 
 let abcIndex = abc.map((item, index) =>{
     return index % 2 === 0 ? index : item
 });
 console.log(abcIndex)
+
+// filter
+// question 4:
+let ages = [10,20,22,23,14,45,2]
+let newAges = ages.filter ((num) =>
+(num > 18));
+console.log(newAges);
+
+// question5:
+let numnum = [2,4,1,2,7,2,8]
+let newNumnum = numnum.filter((num,index)=>
+(index !=3))
+
+console.log (newNumnum)
+
+//spread
+//question 6
+
+const names = ['assaf','avi','moshe'];
+let newNames = [...names,'eli','ilan'];
+
+console.log(newNames)
+
+let nn = ['assaf','lior','shimi'];
+let nnn = ['meir','shalom'];
+let moreNnn = [...nn,...nnn];
+console.log(moreNnn)
